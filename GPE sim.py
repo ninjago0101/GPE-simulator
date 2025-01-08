@@ -14,7 +14,7 @@ def plot_gpe(M, m, r_range):
     plt.plot(r_values, gpe_values, label="Gravitational Potential Energy")
     plt.title("Gravitational Potential Energy vs Distance")
     plt.xlabel("Distance (m)")
-    plt.ylabel("Gravitational Potential Energy (Joules)")
+    plt.ylabel("Gravitational Potential Energy (J)")
     plt.grid(True)
     plt.legend()
     plt.show()
@@ -31,7 +31,7 @@ def main():
         plot_gpe(M, m, (r_min, r_max))
 
     except ValueError:
-        print("Invalid input! Please enter valid numbers.")
+        print("Invalid input! .")
 
 if __name__ == "__main__":
     main()
